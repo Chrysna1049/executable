@@ -43,16 +43,24 @@ Edit file config.ini dengan text editor. Pastikan konfigurasi database di dalam 
 
 Pastikan informasi ini benar sebelum melanjutkan.
 
-Langkah 4: Pastikan File Berada di Direktori yang Sama
+langkah 4: Import database 
+untuk melakukan import database yang sudah disediakan dapat dilakukan dengan cara berikut:
+
+- Buat database terlebih dahulu jika belum ada dengan command berikut:
+  **mysql -u your_username -p -e "CREATE DATABASE Parkee"**
+- Kemudian import database yang sudah disediakan
+  **mysql -u your_username -p Parkee < database.sql**
+
+Langkah 5: Pastikan File Berada di Direktori yang Sama
 File config.ini harus berada di direktori yang sama dengan aplikasi Test_parkee dan Test_parkee_out.
 
-Langkah 5: Beri Izin Eksekusi ke Aplikasi
+Langkah 6: Beri Izin Eksekusi ke Aplikasi
 Sebelum menjalankan aplikasi, Anda perlu memberi izin eksekusi. Buka terminal dan navigasikan ke direktori tempat file aplikasi disimpan. Kemudian jalankan perintah berikut:
 
 - chmod +x Test_Parkee
 - chmod +x Test_Parkee_out
 
-Langkah 6: Jalankan Aplikasi
+Langkah 7: Jalankan Aplikasi
 Setelah memberi izin eksekusi, jalankan aplikasi dengan perintah berikut:
 - ./Test_Parkee
 - ./Test_Parkee_out
